@@ -1,0 +1,32 @@
+The Song class (Entity object):
+	Contains information about the song
+	Plays content through a View object, which in this case is std::cout
+The Album class (Entity object):
+	Contains information about the album
+	Maintains a collection of Songs
+The SongArray class (Collection object):
+	Data structure for Songs.
+The AlbumArray class (Collection object):
+	Data structure for Albums.
+The Songify class (Control object):
+	Manages a collection of Albums.
+	Provides services to the Client (such as download and stream).
+	Prints error messages to std::cout
+The Client class (Control object):
+	“Connects” to the Songify network to stream songs or download albums
+	Manages a collection of downloaded Albums.
+	Prints error messages when appropriate.
+The TestControl class (Control object):
+	Controls the running of tests on your application
+	Interacts with TestView
+The TestView class (Boundary object):
+	Takes input from the user performing the tests
+	
+We will be using std::cout as the main View output object for error reporting.
+
+Instructions for compiling and running the source files:
+	for compiling:
+		make
+		
+	for running: 
+		./a2

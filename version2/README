@@ -1,0 +1,38 @@
+The Array class (Container object):
+	An abstract container for data with overloaded operators.
+
+The Song class (Entity object):
+	Contains information about the song.
+
+The Album class (Entity object):
+	Contains information about the album.
+	Maintains a collection of Songs.
+
+The Criteria class (Entity object):
+	This class is used to match user searches to matching Song objects. There are an additional three derived
+	classes arranged in a diamond hierarchy, A_Criteria, C_Criteria, and AorC_Criteria.
+
+The MediaFactory class (Boundary object):
+	This class is used to create Songs, Albums, and Criteria objects. It separates our application logic from
+	the creation of Songs, Albums, or Criteria types.
+
+The Songify class (Container/Control object):
+	This class contains a collection of Albums. Users can add or remove Albums and add or remove Songs to
+	and from those Albums. In addition, in conjunction with the Controller and View objects, it allows user
+	to browse Albums. Finally users can do searches of all Songs and create playlists based on Criteria they
+	specify.
+
+The Controller class (Control object):
+	Controls the interaction of Songify with the View.
+	Contains a playlist of the most currently searched for Songs.
+
+The View class (Boundary object):
+	Provides a menu, takes input, displays output.
+
+Instructions for compiling and running the source files:
+
+	for compiling:
+		make
+		
+	for running: 
+		./a4
